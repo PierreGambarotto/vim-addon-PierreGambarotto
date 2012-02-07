@@ -26,4 +26,8 @@ fun! vim_addon_PierreGambarotto#Activate(vam_features)
 
   "Switch between the last two files
   nnoremap <leader><leader> <c-^>
+
+  " type enter to unlight all matches
+  set hlsearch
+  nnoremap <silent> <CR> :nohlsearch<CR> 
 endf
