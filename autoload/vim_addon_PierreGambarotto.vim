@@ -30,4 +30,9 @@ fun! vim_addon_PierreGambarotto#Activate(vam_features)
   " type enter to unlight all matches
   set hlsearch
   nnoremap <silent> <CR> :nohlsearch<CR> 
+
+  " max vertical size with gvim
+  if has("gui_running")
+    set lines=999 columns=100
+  endif
 endf
