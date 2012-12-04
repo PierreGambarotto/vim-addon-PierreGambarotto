@@ -41,4 +41,15 @@ snippet img "Link to something"
 ![${1:pic alt}](${2:path}${3/.+/ "/}${3:opt title}${3/.+/"/})$0
 endsnippet
 
+#######################
+# slideshow specifics #
+#######################
+
+snippet cod "bloc de code"
+<% code ${1: :lang => :${2:ruby}} do %>
+$3
+<% end %>
+$0
+endsnippet
+
 # vim:ft=snippets:
