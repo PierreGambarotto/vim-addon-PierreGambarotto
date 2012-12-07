@@ -12,6 +12,8 @@ fun! vim_addon_PierreGambarotto#Activate(vam_features)
   set number
   :colorscheme vibrantink
   :colorscheme vividchalk
+  set splitright
+  set splitbelow
 
   if has("python")
     let g:UltiSnipsExpandTrigger="<tab>"
