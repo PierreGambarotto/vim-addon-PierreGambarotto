@@ -1,7 +1,7 @@
 "addons
 
 fun! vim_addon_PierreGambarotto#Activate(vam_features)
-  let activate = [ "fugitive", "ZenCoding", "rails", "vim-coffee-script", "SearchComplete", "ack", "Syntastic", "vividchalk", "vibrantink", "UltiSnips", "Specky", "Puppet_Syntax_Highlighting", "scss-syntax", "Command-T", "syntaxGemfile", "Markdown_syntax"]
+  let activate = [ "fugitive", "ZenCoding", "rails", "vim-coffee-script", "SearchComplete", "ack", "Syntastic", "vividchalk", "vibrantink", "UltiSnips", "Specky", "Puppet_Syntax_Highlighting", "scss-syntax", "Command-T", "syntaxGemfile", "Markdown_syntax", "Solarized"]
 
   call vam#ActivateAddons(activate,{'auto_install':1})
 
@@ -10,8 +10,11 @@ fun! vim_addon_PierreGambarotto#Activate(vam_features)
   syntax on
   set background=dark
   set number
-  :colorscheme vibrantink
-  :colorscheme vividchalk
+"  :colorscheme vibrantink
+"  :colorscheme vividchalk
+  let g:solarized_termtrans=1
+  let g:solarized_contrast="high"
+  colorscheme solarized
   set splitright
   set splitbelow
 
