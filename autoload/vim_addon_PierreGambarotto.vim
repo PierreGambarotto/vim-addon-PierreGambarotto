@@ -1,7 +1,7 @@
 "addons
 
 fun! vim_addon_PierreGambarotto#Activate(vam_features)
-  let activate = [ "fugitive", "ZenCoding", "rails", "vim-coffee-script", "SearchComplete", "ack", "Syntastic", "vividchalk", "vibrantink", "UltiSnips", "Specky", "Puppet_Syntax_Highlighting", "scss-syntax", "Command-T", "syntaxGemfile", "Markdown_syntax", "Solarized"]
+  let activate = [ "fugitive", "ZenCoding", "rails", "vim-coffee-script", "SearchComplete", "ack", "vividchalk", "vibrantink", "UltiSnips", "Specky", "Puppet_Syntax_Highlighting", "scss-syntax", "Command-T", "syntaxGemfile", "Markdown_syntax", "Solarized", "jade"]
 
   call vam#ActivateAddons(activate,{'auto_install':1})
 
